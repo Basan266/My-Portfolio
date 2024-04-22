@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio / Robert Basan</title>
+    <link rel="stylesheet" href="Home1.css">
+    <link rel= "stylesheet" href="aos.css">
+    <link rel="icon" type="image/x-icon" href="hacker.png">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+       crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src="hacker.png"/></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+    </header>
+
+ 
+
+
+
+    <div class="wrapper">
+        <div class="zoom1">
+            <h3 class="box" data-aos="zoom-in-down">HELLO! WORLD I'M</h3>
+            <h2 class="box" data-aos="zoom-in-down">ROBERT BASAN</h2>
+            <h1 class="box" data-aos="zoom-in-down">  <span class ="auto-type"></span> </h1>
+            <p class="box" data-aos="zoom-in-down">
+                I'M THRILLED TO SHARE MY CREATIVE JOURNEY WITH THIS PORTFOLIO IS
+                A GLIMPSE INTO MY WORLD OF TECHNOLOGY. WHERE I BRING IDEAS TO LIFE 
+                AND  STRIVE FOR INNIVATION I HOPE YOU ENJOY THIS CURATED SHOWCASE 
+                OF MY WORK. IT'S NOT JUST ABOUT WHAT I'VE DONE, BUT THE STORY 
+                BEHIND EACH PROJECT THAT MAKES IT SPECIAL.</p>
+        </div>
+        <div class="zoom2"><img src="me.jpg" alt=""></div>
+    </div>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed (".auto-type",{
+            strings : ["FRONTEND DEVELOPER"],
+            typeSpeed : 150,
+            backSpeed : 150,
+            loop : true
+        })
+
+    </script>
+
+<div class="Explr">
+    <div class="zoom3">
+    <a style="--clr: #7808d0" class="button" href="file:///C:/Users/backu/Downloads/ResumeLatest-1.pdf" target="_blank" class="box" data-aos="zoom-in-down">
+        DOWNLOAD CV
+    </a>
+    </div>
+    <div class="zoom4"></div>
+    </div>
+    
+</body>
+
+<script src="aos.js">
+</script>
+<script type="text/javascript">
+ AOS.init({
+     duration:2000,
+})
+</script>
+
+</html>

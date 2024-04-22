@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel = "stylesheet" href="Contact.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio / Contact</title>
+    <link rel="icon" type="image/x-icon" href="hacker.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" 
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+      integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+       crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>  
+
+  
+        
+    <header>
+        <nav>
+            <ul class='nav-bar'>
+                <li class='logo'><a href='index.html'><img src="hacker.png"/></a></li>
+                <input type='checkbox' id='check' />
+                <span class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="portfolio.html">PORTFOLIO</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
+                    <li><a href="Contact.html">Contact</a></li>
+                    <label for="check" class="close-menu"><i class="fas fa-times"></i></label>
+                </span>
+                <label for="check" class="open-menu"><i class="fas fa-bars"></i></label>
+            </ul>
+        </nav>
+        </header>
+
+    
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var header = document.querySelector("header");
+            header.classList.toggle("sticky", window.scrollY > 0);  
+        })
+    </script>
+
+    <section class="contact">
+        
+        <form action="#">
+            
+
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Full Name" id="name"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Full Name can't be blank</div>
+                </div>
+                
+                <div class="input-field field">
+                    <input type="text" placeholder="Email Address" id="email"
+                    class="item" autocomplete="off">
+                    <div class="error-txt email">Email Address can't be blank</div>
+                </div>
+            </div>
+
+            <div class="input-box">
+                <div class="input-field field">
+                    <input type="text" placeholder="Phone Number" id="phone"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Phone Number can't be blank</div>
+                </div>
+                
+                <div class="input-field field">
+                    <input type="text" placeholder="Subject" id="subject"
+                    class="item" autocomplete="off">
+                    <div class="error-txt">Subject can't be blank</div>
+                </div>
+            </div>
+
+            <div class ="textarea-field field">
+                <textarea name="" id="message" cols="30" rows="10"
+                placeholder="Your Message" class="item"
+                autocomplete="off"></textarea>
+                <div class="error-txt">Message can't be blank</div>
+            </div>
+
+            <button type="submit">Send Message</button>
+
+
+            
+
+        </form>
+    </section>
+
+    <div class="footerContainer">
+        <div class="socialIcons">
+            <a href="https://www.facebook.com/Basan26" target="_blank"><i class="fa-brands fa-facebook"> </i></a>
+            <a href=""><i class="fa-brands fa-instagram"> </i></a>
+            <a href=""><i class="fa-brands fa-twitter"> </i></a>
+            
+   </div>
+    
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src=" script.js"></script>
+    
+</body>
+</html>

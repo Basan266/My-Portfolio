@@ -1,0 +1,331 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+    
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    --color1: yellow ;
+    --color2: #181818 ;
+    background: black;
+}
+
+
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    position: relative;
+    background-color: var(--color2);
+    padding: 8px 70px;
+    font-size: 12px;
+    top: 0px;
+}
+.logo img {width: 40px;}
+.menu {display: flex;}
+.menu li {padding-left: 30px;}
+
+.menu li a {
+    display: inline-block;
+    text-decoration: none;
+    color: var(--color1);
+    text-align: center;
+    transition: 0.15s ease-in-out;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.menu li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color1);
+    transition: 0.15s ease-in-out;
+}
+
+.menu li a:hover:after {width: 100%;}
+.open-menu , .close-menu {
+    position: absolute;
+    color: var(--color1);
+    cursor: pointer;
+    font-size: 1.5rem;
+    display: none;
+}
+.open-menu {
+    top: 50%;
+    right: 20px;
+    transform: translateY(-50%);
+}
+
+.close-menu {
+    top: 20px;
+    right: 20px;
+}
+
+
+
+
+/* Contact Form*/
+
+
+
+.contact form {
+    width: 80%; /* Adjust the width for smaller screens */
+    max-width: 600px; /* Set a maximum width */
+    text-align: center;
+    padding: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid yellow;
+    position: relative;        
+    bottom: 50px;
+    left: 400px;
+    position: fixed;
+    right: 0;
+    left: 0;
+   
+    
+   
+}
+
+form .input-box {
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap to the next line on smaller screens */
+    justify-content: space-between;
+}
+
+.input-box .input-field {
+    width: 48.5%;
+    display: flex;
+    gap: 0;
+    flex-direction: column;
+}
+
+.field .item {
+    width: 100%;
+    padding: 18px;
+    background: white;
+    border-radius: 6px;
+    outline: none;
+    font-size: 12px;
+    color: black;
+    margin: 5px 0;
+    box-sizing: border-box;
+    
+   
+}
+
+.field.error .item {
+    border-color: yellow;
+    border-style: solid;
+}
+
+.field .item::placeholder {
+    color: black;
+    text-shadow: 0px 0px 1px;
+    font-size: 11px;
+}
+
+.field .error-txt {
+    font-size: 10px;
+    color: yellow;
+    text-align: left;
+    margin: 5px 0 10px;
+    display: none;
+}
+
+.field.error .error-txt {
+    display: block;
+}
+
+form .textarea-field .item {
+    resize: none;
+}
+
+form button {
+    padding: 12px 32px;
+    background: yellow;
+    border: none;
+    outline: none;
+    border-radius: 6px;
+    box-shadow: 0 0 12px yellows;
+    font-size: 12px;
+    color: #000;
+    letter-spacing: 1px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: 0.5s;
+}
+
+form button:hover {
+    box-shadow: none;
+}
+
+
+/*ICONS*/
+
+.footerContainer{
+    width: 8%;
+    padding: 20px 30px 10px;
+    position:absolute;
+    display: block;
+    top: 55%;
+    right: 68.5%;
+    position: fixed;
+    right: 0;
+    left: 0;
+}
+
+.socialIcons{
+    display: grid;
+    grid-template-columns: auto;
+    gap: 5px;
+
+}
+
+.socialIcons a{
+    text-decoration: none;
+    padding: 10px;
+    position: relative;
+}
+
+.socialIcons a i{
+    font-size: 2em;
+    color:yellow;
+    opacity: 10;
+}
+
+.socialIcons a:hover{
+    background-color: darkgoldenrod;
+    transition: 0.5s;
+}
+
+
+
+#check {display: none;}
+/* Smaller screens (media query) */
+@media screen and (max-width: 767px) {
+
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       
+        
+    }
+    
+    body {
+        font-family: "Poppins", sans-serif;
+        --color1: yellow ;
+        --color2: #181818 ;
+        background: #020412;
+    }
+    
+
+    .contact h2 {
+        font-size: 18px; /* Adjust font size for smaller screens */
+        margin-top: 70px; /* Adjust margin for smaller screens */
+    }
+
+    .input-box .input-field {
+        width: 100%; /* Make input fields full-width on smaller screens */
+        display: center;
+    }
+
+    .contact form{
+        position: relative;
+        width: 400px;
+        right: 100px;
+        top: 160px;
+        padding: 20px;
+    }
+
+    .nav-bar {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        position: absolute;
+        background-color: var(--color2);
+        padding: 8px 70px;
+        font-size: 12px;
+        top: 0px;
+    }
+              /*Nav Bar*/
+              .menu {
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                width: 80%;
+                height: 100vh;
+                position: fixed;
+                top: 0;
+                right: -100%;
+                z-index: 100;
+                background-color: var(--color2);
+                transition: all 0.2s ease-in-out;
+            }
+    
+            .logo{
+                position: relative;
+                right: 45px;
+                border: none;
+            }
+            .menu li {margin-top: 40px;}
+            .menu li a {padding: 10px;}
+            .open-menu , .close-menu {display: block;}
+            #check:checked ~ .menu {right: 0;}
+
+
+            /*ICON*/
+
+    .footerContainer{
+        width: 96%;
+        padding: 10px 30px 10px;
+        position:relative;
+        top: 200px;
+        right: 0%;
+     
+        margin: 10px;
+        
+        
+    }
+    
+    .socialIcons{
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+       
+    }
+    
+    .socialIcons a{
+        text-decoration: none;
+        padding: 10px;
+        
+        margin: 10px;
+        border-radius: 50%;
+    }
+    
+    .socialIcons a i{
+        font-size: 1.5em;
+        color:yellow;
+        opacity: 0.9;
+    }
+    
+    .socialIcons a:hover{
+        background-color: white;
+        transition: 0.5s;
+    }
+}
